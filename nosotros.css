@@ -1,0 +1,197 @@
+/*footer*/
+.footer {
+    background-color: black; /* Fondo negro para el pie de página */
+    color: orange; /* Texto naranja en el pie de página */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Espaciado dentro del pie de página */
+    display: flex; /* Flexbox para organizar los elementos dentro */
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    font-size: 0.9em; /* Reduce el tamaño de fuente */
+    height: 60px; /* Establece la altura del pie de página */
+
+}
+
+.footer span {
+    margin-right: 20px; /* Espacio entre el texto y los enlaces */
+}
+
+.footer a {
+    color: orange; /* Color de los enlaces en el pie de página */
+    margin: 0 33px; /* Espacio entre los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave en color y tamaño */
+}
+
+/* Efecto hover para los enlaces en el pie de página */
+.footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al hacer hover */
+    color: #ffbb33; /* Cambia el color a más claro al pasar el ratón */
+}
+/*footer terminado*/
+
+
+
+/*  Barra de Navegación  */
+.navbar {
+    display: flex; /* Flexbox para centrar los enlaces */
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    background-color: black; /* Fondo negro para la barra */
+    padding: 10px; /* Espaciado dentro de la barra */
+    animation: slideIn 1s ease-in-out; /* Animación de deslizamiento para la barra */
+}
+
+.navbar a {
+    color: orange; /* Color de los enlaces en la barra */
+    margin: 0 15px; /* Espacio entre los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave en color y tamaño */
+}
+
+.navbar a:hover {
+    color: #ffbb33; /* Color al pasar el ratón sobre los enlaces */
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del enlace */
+}
+/*terminado barra*/
+
+body {
+    background-image: url('imagenes/fondo-color-pastel-violeta-suave-azul-fresco_1962-1398.avif');
+    background-size: cover; /* La imagen cubre toda la sección */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header .rectangulo, footer .rectangulo {
+    background-color: #d90c0c60;
+    height: 0px;
+    width: 100%;
+}
+
+nav.top-nav, nav.footer-nav {
+    background-color:  #0d0d0d;
+    padding: 10px  ;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: rgb(127, 127, 2);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li:hover {
+    background-color: #555;
+}
+
+nav ul li a {
+    color: rgb(28, 25, 25);
+    text-decoration: none;
+    display: block;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #060606;
+    color: olive;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    padding-bottom: 10px; 
+}
+
+h1 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    padding: 0px;
+}
+
+.cuadrado {
+    width: 60%;
+    background-color: white;
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left; 
+    text-align: justify;
+}
+
+.imagen {
+    
+    background-color: #b2dfdb;
+    width: 30%;
+}
+
+.imagen img {
+    background-color: #b2dfdb;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .cuadrado, .imagen {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        width: auto;
+        height: auto;
+        margin: 10px 0;
+    }
+}
+.color{
+    color: rgb(232, 246, 246);
+    text-align: left;
+}
+.color:hover{
+    color: olive;
+}
+.center {
+    text-align: center;
+}
+h1{
+    text-align: center;
+}

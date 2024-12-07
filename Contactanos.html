@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="Contactanos.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <div class="navbar" aria-label="Barra de navegación principal">
+       
+     <h3>  <a href="index.html">INICIO</a></h3> 
+     <h3> <a href="nosotros.html">NOSOTROS</a></h3> 
+        <h3>  <a href="productos.html">PRODUCTOS</a></h3> 
+            <h3>  <a href="Contactanos.html">CONTACTANOS</a></h3> 
+    </div>
+
+    <!--Sección Principal con el Fondo de Pantalla  -->
+    <div class="main-section">
+        <!-- Formulario de Contacto -->
+        <div class="contact-form">
+            <h2>CONTÁCTANOS</h2>
+            <form id="formContacto" onsubmit="validarFormulario(event)">
+                <label for="nombre">Ingrese su Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Ingrese su Correo</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="celular">Ingrese su Celular</label>
+                <input type="tel" id="celular" name="celular" pattern="[0-9]+" maxlength="9" title="Por favor, ingrese solo números" required oninvalid="this.setCustomValidity('Por favor, ingrese solo números en este campo')" oninput="setCustomValidity('')">
+
+                <label for="mensaje">Ingrese su Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+
+            <!-- Mensaje de Éxito -->
+            <div id="mensajeExito" class="success-message">Su comentario se envió exitosamente.</div>
+        </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <div class="footer">
+        
+        <h2><p>Redes Sociales:</p></h2>
+        <div>
+          <h2>  <a href="Redes.html">Facebook</a>
+            <a href="Redes.html">Instagram</a>
+            <a href="Redes.html">Twitter</a>
+        </div>
+    </div>
+    <script src="Contactanos.js"></script>
+</body>
+</html>

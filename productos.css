@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-image: url('imagenes/fondo-color-pastel-violeta-suave-azul-fresco_1962-1398.avif');
+     background-size: cover; /* La imagen cubre toda la sección */
+    background-size: cover; 
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(254, 254, 254, 0.826);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 55px 0 0 0;
+    background-color: rgb(39, 39, 44);
+}
+
+.menu {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: rgb(225, 237, 221);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: rgb(252, 247, 247);
+    display: inline-block;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.navbar ul li a:hover{
+    color: olive;
+}
+
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color:rgb(39, 39, 44);
+    padding: 20px;
+    min-width: 400px;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    color: rgb(176, 229, 229);
+}
+
+.borrar {
+    background-color: chartreuse;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: rgb(218, 249, 249);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+span {
+    color: chartreuse;
+    font-size: 17px;
+    font-weight: 600px;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.header-txt p {
+    font-size: 17px;
+    color: aqua;
+    margin-bottom: 35px;
+}
+
+.butons {
+    display: flex;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: rgb(104, 182, 26);
+    margin-right: 20px;
+    color: aqua;
+    text-transform: capitalize;
+    margin-bottom: 100px;
+}
+oferts {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ofert-1 {
+    flex-basis: calc(33.3% - 20px);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.b1 {
+    background-color: midnightblue;
+}
+.b2 {
+    background-color:  midnightblue;
+}
+.b3 {
+    background-color:  midnightblue;
+}
+.ofert-txt a {
+    color: aqua;
+}
+
+.products {
+    padding: 0 0 50px 0;
+    text-align: center;
+}
+
+.box-container {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    border-top: 03px  solid rgb(66, 67, 63);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgb(236, 245, 245);
+    background-color: rgb(39, 39, 96);
+    display: none;
+}
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3),
+.box:nth-child(4),
+.box:nth-child(5),
+.box:nth-child(6),
+.box:nth-child(7),
+.box:nth-child(8) {
+    display: inline-block;
+}
+
+.box img {
+    height: 210px;
+}
+
+.product-txt h3 {
+    font-size: 20px;
+    color: rgb(233, 213, 213);
+    margin-bottom: 10px;
+}
+
+.product-txt p {
+    margin-bottom: 25px;
+    color: rgb(240, 236, 236);
+}
+
+.precio {
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(113, 155, 71) !important;
+}
+
+.btn-2, .btn-3 {
+    background-color: rgb(135, 211, 59);
+    margin-top: 50px;
+    display: inline-block;
+    padding: 11px 35px;
+    border-radius: 25px;
+    color: rgb(201, 227, 227);
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: o 5px 10px rgb(18, 11, 11);
+}
+
+.btn-2:hover, .btn-3:hover,.btn-1:hover {
+    background-color: olive;
+}
+
+.btn-3 {
+    margin: 0;
+    padding: 8px 25px;
+    border-radius: 5px;
+}
+
+.testimonial {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.testimonial-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.testimonial-1 {
+    flex-basis: calc(50% - 20px);
+    padding: 50px;
+    text-align: left;
+    background-color:  midnightblue;
+    
+}
+
+.testimonial-1 img {
+    width: 100px;
+}
+
+
+
+.testimonial-1 p {
+    color: aqua;
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: #070707;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    background-color: olive;
+    padding: 5px 20px 0px;
+    border-radius: 3%;
+    height: 30px;
+    
+
+}
+
+.link a {
+    color: aqua;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.link a:hover {
+    color: #0f0f0f;
+}
+
+@media (max-width:991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(39, 39, 44) ;    
+        display:none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .logo {
+        display: none;
+    }
+    .menu .navbar ul li a:hover {
+        color: olive;
+    }
+
+    .submenu:hover #carrito {
+        width: 100%;
+    }
+
+    .header-content {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt {
+        margin-right: 0;
+    }
+
+    .butons {
+        justify-content: center;
+    }
+
+    .btn-1 {
+        margin-bottom: 0;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .oferts {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .ofert-1 {
+        margin-bottom: 15px;
+    }
+
+    .products {
+        padding: 0 30px 30px 30px;
+    }
+
+    .testimonial {
+        padding: 30px;
+    }
+
+    .testimonial-content {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .testimonial-1 {
+        padding: 25px;
+        margin-bottom: 25px;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+.color:hover{
+    color: olive;
+}
+.color{
+    color: aqua;
+}
+.category-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 20px 0 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+
+/*footer*/
+.footer {
+    background-color: black; /* Fondo negro para el pie de página */
+    color: orange; /* Texto naranja en el pie de página */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Espaciado dentro del pie de página */
+    display: flex; /* Flexbox para organizar los elementos dentro */
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    font-size: 0.9em; /* Reduce el tamaño de fuente */
+    height: 60px; /* Establece la altura del pie de página */
+
+}
+
+.footer span {
+    margin-right: 20px; /* Espacio entre el texto y los enlaces */
+}
+
+.footer a {
+    color: orange; /* Color de los enlaces en el pie de página */
+    margin: 0 33px; /* Espacio entre los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave en color y tamaño */
+}
+
+/* Efecto hover para los enlaces en el pie de página */
+.footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al hacer hover */
+    color: #ffbb33; /* Cambia el color a más claro al pasar el ratón */
+}
+/*footer terminado*/
+
+
+
+/*barra de navegacion del inicio*/
+.navbar {
+    display: flex; /* Flexbox para centrar los enlaces */
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    background-color: black; /* Fondo negro para la barra */
+    padding: 10px; /* Espaciado dentro de la barra */
+    animation: slideIn 1s ease-in-out; /* Animación de deslizamiento para la barra */
+}
+
+.navbar a {
+    color: orange; /* Color de los enlaces en la barra */
+    margin: 0 15px; /* Espacio entre los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave en color y tamaño */
+}
+
+.navbar a:hover {
+    color: #ffbb33; /* Color al pasar el ratón sobre los enlaces */
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del enlace */
+}
+
+/*barra de navegacion del inicio terminado*/

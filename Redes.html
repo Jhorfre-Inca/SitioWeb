@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Sociales y Ubicación</title>
+    <link rel="stylesheet" href="redes.css">
+</head>
+<body>
+    <div class="navbar" aria-label="Barra de navegación principal">
+       
+        <h3>  <a href="index.html">INICIO</a></h3> 
+        <h3> <a href="nosotros.html">NOSOTROS</a></h3> 
+           <h3>  <a href="productos.html">PRODUCTOS</a></h3> 
+               <h3>  <a href="Contactanos.html">CONTACTANOS</a></h3> 
+       </div>
+
+    <section class="redes-sociales">
+        <!-- Contenedor de imágenes de redes sociales -->
+        <div class="red">
+            <img src="imagenes/face.png">
+            <button onclick="location.href='https://www.facebook.com/shopixar/'">Facebook</button>
+        </div>
+        <div class="red">
+            <img src="imagenes/in.png">
+            <button onclick="toggleSeguir(this, 'Instagram')">Seguir</button>
+        </div>
+        <div class="red">
+            <img src="imagenes/ta.webp">
+            <button onclick="toggleSeguir(this, 'Twitter')">Seguir</button>
+        </div>
+        <div class="red">
+            <img src="imagenes/tik.webp">
+            <button onclick="toggleSeguir(this, 'TikTok')">Seguir</button>
+        </div>
+    </section>
+
+  
+
+    <section class="ubicacion">
+        <!-- Sección de mapa con botón de Ver Más -->
+        <h2>¿Dónde nos encontramos?</h2>
+        <button class="ver-mas" onclick="mostrarMapa()">Ver más</button>
+        <div class="mapa-container" style="display: none;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d47132236.55836592!2d-59.223846177073156!3d-33.21164865153323!3m2!1i1024!2i768!4f13.1!2m1!1sshopix!5e1!3m2!1ses-419!2spe!4v1731708227343!5m2!1ses-419!2spe"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <div class="footer">
+      <h2>  <p>Copyright© todos los derechos reservados de Shopix</p></h2>
+    </div>
+
+    <script src="redes.js"></script>
+</body>
+</html>

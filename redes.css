@@ -1,0 +1,144 @@
+/* Diseño del cuerpo */
+body {
+    background-image: url('imagenes/fondo-color-pastel-violeta-suave-azul-fresco_1962-1398.avif');
+    background-size: cover; /* La imagen cubre toda la sección */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centra el contenido */
+    background-color: #f4f4f4; /* Fondo claro */
+}
+
+/* Contenedor de redes sociales */
+.redes-sociales {
+    display: flex; /* Coloca los elementos en fila */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 20px; /* Espacio entre cada cuadrado */
+    margin: 20px 0;
+}
+
+/* Cuadrados de las redes sociales */
+.red {
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px;
+    background-color: #fff; /* Fondo blanco */
+    width: 240px; /* Ancho fijo */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.red img {
+    width: 100%; /* Imagen ajustada al cuadro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.red button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ff9800; /* Botón naranja */
+    border: none;
+    color: #fff; /* Texto blanco */
+    border-radius: 5px;
+    cursor: pointer; /* Muestra el puntero */
+}
+
+.red button:hover {
+    background-color: #e68900; /* Cambia de color al pasar el mouse */
+}
+
+/* Contenedor del mapa */
+.ubicacion {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none; /* Sin borde */
+    border-radius: 10px;
+}
+
+.ver-mas {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.ver-mas:hover {
+    background-color: #e68900;
+}
+
+/* Pie de Página */
+.footer {
+    background-color: black; /* Fondo negro para el pie de página */
+    color: orange; /* Texto naranja en el pie de página */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Aumenta el espacio del footer */
+    margin-top: 50px; /* Baja el footer */
+}
+
+/*  Barra de Navegación  */
+.navbar {
+    display: flex; /* Flexbox para centrar los enlaces */
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    background-color: black; /* Fondo negro para la barra */
+    padding: 10px; /* Espaciado dentro de la barra */
+    animation: slideIn 1s ease-in-out; /* Animación de deslizamiento para la barra */
+}
+
+.navbar a {
+    color: orange; /* Color de los enlaces en la barra */
+    margin: 0 15px; /* Espacio entre los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave en color y tamaño */
+}
+
+.navbar a:hover {
+    color: #ffbb33; /* Color al pasar el ratón sobre los enlaces */
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del enlace */
+}
+/*terminado barra*/
+
+/* Pie de Página */
+.footer {
+    background-color: black; /* Fondo negro para el pie de página */
+    color: orange; /* Texto naranja en el pie de página */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Espaciado dentro del pie de página */
+    display: flex; /* Flexbox para organizar los elementos dentro */
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    font-size: 0.9em; /* Reduce el tamaño de fuente */
+    height: 60px; /* Establece la altura del pie de página */
+
+}
+
+.footer span {
+    margin-right: 20px; /* Espacio entre el texto y los enlaces */
+}
+
+.footer a {
+    color: orange; /* Color de los enlaces en el pie de página */
+    margin: 0 33px; /* Espacio entre los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave en color y tamaño */
+}
+
+/* Efecto hover para los enlaces en el pie de página */
+.footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al hacer hover */
+    color: #ffbb33; /* Cambia el color a más claro al pasar el ratón */
+}
